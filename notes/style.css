@@ -1,0 +1,105 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    width:100%;
+    min-height: 100vh;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(25,120,155,1) 100%);
+    scroll-behavior: smooth;
+    animation: ease-in-out
+}
+.main{
+    padding-left: 50px;
+    padding-top: 50px;
+}
+.main h1 img{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+.main h1{
+    font-size: 50px;
+    color: antiquewhite;
+    font-family: cursive;
+}
+.main button img{
+    
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+}
+.main button{
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: rgb(17, 176, 255);
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    color: antiquewhite;
+    font-size: 20px;
+    box-shadow: 2px 1px 5px black;
+    margin-top: 20px;
+}
+.main-text{
+    display: grid;
+    grid-template-columns: repeat(4,400px);
+    column-gap: 20px;
+}
+.notearea{
+
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    background-color: beige;
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-top: 10px;
+    box-shadow: 2px 3px 5px black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:cursive ;
+    overflow:auto;
+}
+.notearea img{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    left: 345px;
+    top:160px;
+    cursor: pointer;
+}
+@media screen and (max-width:850px){
+    .main-text{
+        grid-template-columns: repeat(2,300px)
+    }
+    .notearea{
+        width: 250px;
+        height: 150px;
+    }
+    .notearea img{
+        left: 200px;
+        top:110px;
+    }
+}
+@media screen and (max-width:500px){
+    .main-text{
+        grid-template-columns: repeat(1,300px)
+    }
+    .notearea{
+        width: 250px;
+        height: 150px;
+    }
+    .notearea img{
+        left: 200px;
+        top:110px;
+    }
+}

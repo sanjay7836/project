@@ -1,0 +1,75 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh;
+    width:100%;
+    background: linear-gradient(145deg,blue,red);
+}
+.main{
+    max-width: 500px;
+    height:auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 20px;
+       
+}
+.main h1{
+    font-size: 50px;
+    padding-bottom: 20px;
+    color: rgb(0, 255, 255);
+    font-family: cursive;
+   
+}
+.text{
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+}
+#quate{
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
+#quate::after,#quate::before{
+    content: '"';
+}
+#author{
+    position: relative;
+    margin-top: 15px;
+    margin-left: 300px;
+    font-size: 15px;
+}
+#author::before{
+   
+    content: "--";
+}
+.btns{
+    margin-top: 30px;
+    display: flex;
+    justify-content:space-evenly;
+}
+.btns button{
+    /* margin-right: 380px;
+    margin-top: 20px; */
+    font-size: 14px;
+   min-width:90px;
+    height: 40px;
+    padding: 5px 0;
+    color:white;
+    border: none;
+    border-radius: 26px;
+    background:linear-gradient(190deg,rgb(212, 74, 74),rgb(0, 0, 0));
+}
+#btn2 img{
+    margin-right: 5px;
+}
